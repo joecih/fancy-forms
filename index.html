@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<head>
-	<title>Fancy-Form</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
-</head>
-<body>
-	<div id="form-wrapper">
-		<form id="sign-up-form">
-			
-			<div id="sign-up"></div>
+<html>
+	<head>
+		<title>Fancy-Form</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+	</head>
+	<body>
+		<div id="form-wrapper">
+			<form id="sign-up-form">
+				
+				<div id="sign-up">
+					<h1>Sign up now!<span>Sign up and tell me what you think of my site!</span></h1>
+				</div>
+				<div class="section">
+					<span>1</span>First Name & Address
+				</div>
+				<div class="style-wrapper">
+					<div id="name-wrapper">
+						<label>Your Full Name:
+							<input type="text" name="fullName" value="" placeholder="ex. Joe Smoe">
+						</label>
+					</div>
+					<div id="address-wrapper">
+						<label>Address: <input type="text" name="address1" placeholder="Address" value=""></label>
+					</div>
+				</div>
+				<div class="section">
+					<span>2</span>Email & Phone
+				</div>
+				<div  class="style-wrapper">
+					<div id="email-wrapper">
+						<label>Email: <input type="email" name="email" placeholder="Email" value=""></label>
+					</div>
+					<div id="phone-wrapper">
+						<label>Phone: <input type="phone" name="phone" placeholder="Phone" value=""></label>
+					</div>
+				</div>
+				<div class="section">
+					<span>3</span>Password
+				</div>
+				<div  class="style-wrapper">
+					<div id="password-wrapper">
+						<label>Password<input type="password" name="password" placeholder="Password" value=""></label>
+					</div>
+					<div id="password-confirm-wrapper">
+						<label>Confirm Password<input type="password" name="confirmPassword" placeholder="Confirm Password" value=""></label>
+					</div>
+				</div>
+				<div class="section">
+					<span>4</span>Skills
+				</div>
+				<div class="style-wrapper">
+					<div id="skills-wrapper">
+						<label>My Tech Skills
+							<input type="text" name="techSkills" placeholder="eg. 'json, javascript, jQuery, Linux ...'" value="">
+						</label>
+						<label>My Age
+							<input type="number" name="age" placeholder="My Age" value="">
+						</label>
+					</div>
+				</div>
+				<div id="button-wrapper">
+					<input type="submit" value="Sign Me Up!">
+					<span class="privacy">
+					<input type="checkbox" name="privacy">I agree to the terms and policies</span>
+				</div>
+			</div>
 			
 		</form>
 	</div>
