@@ -1,5 +1,5 @@
 body {
-/*	background-color: lightgrey;*/
+    margin: 0;
 }
 
 h1 {
@@ -7,8 +7,9 @@ h1 {
 	font-size: 30px;
 }
 
+
 #form-wrapper {
-	width: 80%;
+	width: 400px;
 	padding: 30px;
 	margin: auto;
 	background-color: lightgrey;
@@ -59,40 +60,54 @@ h1 {
 
 #form-wrapper input {
 	display: block;
-	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	box-shadow: -1px -1px 2px rgba(0,0,0,0.5);
 	border-radius: 5px;
-	width: 100%;
+	width: 85%;
+    border: 0;
+    height: 25px;
+    padding: 5px;
+    margin: auto;
 }
 
 #button-wrapper {
-	width: 50%;
+	width: 75%;
 	margin: auto;
 	padding: 10px;
 	font-family: Arial;
+    text-align: center;
 }
 
-#button-wrapper button {
+/*#button-wrapper button {
  width: 100px;
  height: 40px;
  margin-right: 20px;
  border-radius: 10px;
  background-color: #2a88ad;
  color: #fff;
+}*/
+
+input[type='submit']{
+    box-shadow: 1px 1px 3px black !important;
+    font-size: 18px !important;
 }
 
-input[type=submit]{
-	width: auto;
-	display: inline-block;
+#tick {
+    display: inline-block !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 15px !important;
+    font-size: 40px !important;
 }
 
-input[type=checkbox] {
-	width: initial;
-	float:left;
-	
-}
 
 .style-wrapper {
-	background-color: darkgrey;
 	padding:10px;
-	border-radius: 5px;
+	border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+
+label {
+    padding-bottom:5px;
+    text-align: center;
 }
